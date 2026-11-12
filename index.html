@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#b83232"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Mandarin — Révisions</title>
+<style>
+:root{--red:#b83232;--red2:#8f2428;--ink:#202124;--muted:#6c7077;--paper:#f7f5f1;--card:#fff;--line:#e8e3dc;--green:#23845d}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding-bottom:calc(82px + env(safe-area-inset-bottom))}
+header{background:linear-gradient(135deg,var(--red2),var(--red));color:white;padding:24px 20px 22px;border-radius:0 0 25px 25px}
+.kicker{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;opacity:.8}h1{font-size:27px;margin:6px 0 4px}header p{margin:0;opacity:.9;font-size:14px}
+main{max-width:720px;margin:auto;padding:18px 16px}.view{display:none}.view.active{display:block}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 18px}.stat,.panel,.word-card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:14px;box-shadow:0 3px 12px #34251408}
+.stat b{display:block;font-size:22px;color:var(--red)}.stat span{font-size:11px;color:var(--muted)}
+h2{font-size:19px;margin:8px 0 13px}.muted{color:var(--muted);font-size:13px}
+input,select{width:100%;border:1px solid var(--line);border-radius:12px;background:white;padding:13px;font-size:16px;color:var(--ink);outline-color:var(--red)}
+.toolbar{display:flex;gap:9px;margin:12px 0}.toolbar>*{flex:1}
+.list{display:grid;gap:9px;margin-top:12px}.word{display:flex;align-items:center;gap:13px;text-align:left;width:100%;border:1px solid var(--line);border-radius:14px;padding:11px;background:white;color:inherit}
+.hanzi{font-family:"Noto Serif CJK SC","Songti SC",serif;font-size:31px;min-width:43px;text-align:center;color:var(--red)}
+.word-info{flex:1}.word-info b{display:block;font-size:15px}.word-info small{color:var(--muted)}.word-info em{font-style:normal;font-size:13px}
+button{cursor:pointer;font:inherit}.icon-btn{border:0;background:#f6e9e7;color:var(--red);border-radius:11px;padding:9px 12px;font-size:18px}
+.tabs{position:fixed;z-index:5;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);padding:8px 8px calc(8px + env(safe-area-inset-bottom));}
+.tab{border:0;background:transparent;color:var(--muted);font-size:12px;padding:7px 2px}.tab span{display:block;font-size:21px;margin-bottom:2px}.tab.active{color:var(--red);font-weight:700}
+.flash{min-height:270px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px}
+.prompt{font-size:12px;text-transform:uppercase;letter-spacing:1.3px;color:var(--muted)}.big{font-size:76px;line-height:1.25;margin:17px 0;font-family:"Noto Serif CJK SC","Songti SC",serif;color:var(--red)}
+.answer{font-size:22px;font-weight:700;margin:4px 0}.translation{color:var(--muted);margin-top:5px}
+.actions{display:flex;gap:10px;margin-top:16px}.btn{flex:1;border:0;border-radius:13px;padding:14px;font-weight:650;background:var(--red);color:white}.btn.secondary{background:#f3e8e6;color:var(--red)}.btn.good{background:var(--green)}
+.hidden{display:none!important}.mode-note{padding:11px 13px;background:#f8ecea;border-radius:12px;color:#7e2929;font-size:13px;margin:12px 0}
+.progressbar{height:8px;background:#eee8e1;border-radius:9px;overflow:hidden;margin:10px 0 16px}.progressbar div{height:100%;background:var(--green);width:0}
+.detail{text-align:center;padding:22px}.detail .big{font-size:88px}.detail p{margin:8px}
+footer{font-size:11px;color:var(--muted);text-align:center;margin:22px 0}
+@media(min-width:600px){header{padding-left:max(24px,calc((100vw - 680px)/2));padding-right:max(24px,calc((100vw - 680px)/2))}}
+</style>
+</head>
+<body>
+<header><div class="kicker">中文 · Mandarin</div><h1>Mes révisions de chinois</h1><p>72 caractères · dictionnaire personnel · entraînement dans les deux sens</p></header>
+<main>
+<section id="home" class="view active">
+ <div class="stats"><div class="stat"><b id="total">72</b><span>caractères</span></div><div class="stat"><b id="known">0</b><span>maîtrisés</span></div><div class="stat"><b id="done">0</b><span>révisions</span></div></div>
+ <div class="panel"><h2>Reprendre l'entraînement</h2><p class="muted">Entraîne-toi à reconnaître les caractères depuis le pinyin et à retrouver leur pinyin depuis les caractères.</p><button class="btn" onclick="show('train')">Commencer une session →</button></div>
+ <div class="panel" style="margin-top:12px"><h2>Ta progression</h2><div class="progressbar"><div id="progress"></div></div><p class="muted" id="progressText">Aucun caractère maîtrisé pour le moment. Chaque bonne réponse te fera progresser.</p></div>
+ <div class="mode-note">Astuce : utilise le bouton 🔊 pour écouter la prononciation en mandarin. Le son dépend de la voix chinoise installée sur ton iPhone.</div>
+</section>
+<section id="dict" class="view">
+ <h2>Mon dictionnaire</h2><p class="muted">Recherche par caractère, pinyin ou traduction française.</p>
+ <input id="search" placeholder="Ex. 学, xué, apprendre…" oninput="renderDictionary()">
+ <div class="toolbar"><select id="sort" onchange="renderDictionary()"><option value="order">Ordre de ta liste</option><option value="hanzi">Caractère</option><option value="pinyin">Pinyin</option></select><select id="filter" onchange="renderDictionary()"><option value="all">Tous les mots</option><option value="known">Maîtrisés</option><option value="review">À revoir</option></select></div>
+ <div id="wordList" class="list"></div>
+</section>
+<section id="train" class="view">
+ <h2>Entraînement</h2><p class="muted">Une carte à la fois. Essaie de répondre avant de révéler la solution.</p>
+ <div class="toolbar"><select id="direction" onchange="newCard()"><option value="hanzi">Pinyin → caractère</option><option value="pinyin">Caractère → pinyin</option><option value="mixed">Aléatoire · les deux sens</option></select><select id="scope" onchange="newCard()"><option value="all">Tout le vocabulaire</option><option value="review">À revoir en priorité</option></select></div>
+ <div class="panel flash">
+  <div class="prompt" id="prompt">Retrouve le caractère chinois</div>
+  <div class="big" id="question">xué</div>
+  <div id="solution" class="hidden"><div class="answer" id="answer">学 · xué</div><div class="translation" id="meaning">apprendre / étudier</div></div>
+  <button class="icon-btn" style="margin-top:15px" onclick="speakCurrent()" aria-label="Écouter">🔊 Écouter</button>
+ </div>
+ <div class="actions" id="before"><button class="btn" onclick="reveal()">Voir la réponse</button></div>
+ <div class="actions hidden" id="after"><button class="btn secondary" onclick="rate(false)">À revoir</button><button class="btn good" onclick="rate(true)">Je connais</button></div>
+ <p class="muted" id="sessionMsg" style="text-align:center">Réponds de mémoire, puis indique si tu connaissais le caractère.</p>
+</section>
+<footer>Mandarin — version personnelle · tes progrès sont enregistrés sur cet appareil.</footer>
+</main>
+<nav class="tabs"><button class="tab active" data-view="home" onclick="show('home')"><span>⌂</span>Accueil</button><button class="tab" data-view="dict" onclick="show('dict')"><span>字</span>Dictionnaire</button><button class="tab" data-view="train" onclick="show('train')"><span>✓</span>Réviser</button></nav>
+<script>
+const words = [{"hanzi": "一", "pinyin": "yī", "fr": "un"}, {"hanzi": "二", "pinyin": "èr", "fr": "deux"}, {"hanzi": "三", "pinyin": "sān", "fr": "trois"}, {"hanzi": "四", "pinyin": "sì", "fr": "quatre"}, {"hanzi": "五", "pinyin": "wǔ", "fr": "cinq"}, {"hanzi": "六", "pinyin": "liù", "fr": "six"}, {"hanzi": "七", "pinyin": "qī", "fr": "sept"}, {"hanzi": "八", "pinyin": "bā", "fr": "huit"}, {"hanzi": "九", "pinyin": "jiǔ", "fr": "neuf"}, {"hanzi": "十", "pinyin": "shí", "fr": "dix"}, {"hanzi": "大", "pinyin": "dà", "fr": "grand"}, {"hanzi": "马", "pinyin": "mǎ", "fr": "cheval"}, {"hanzi": "口", "pinyin": "kǒu", "fr": "bouche ; ouverture"}, {"hanzi": "车", "pinyin": "chē", "fr": "voiture ; véhicule"}, {"hanzi": "书", "pinyin": "shū", "fr": "livre"}, {"hanzi": "人", "pinyin": "rén", "fr": "personne"}, {"hanzi": "头", "pinyin": "tóu", "fr": "tête"}, {"hanzi": "子", "pinyin": "zi", "fr": "enfant ; suffixe nominal"}, {"hanzi": "儿", "pinyin": "ér", "fr": "enfant ; suffixe -er"}, {"hanzi": "女", "pinyin": "nǚ", "fr": "femme ; féminin"}, {"hanzi": "中", "pinyin": "zhōng", "fr": "milieu ; centre ; Chine (dans 中国)"}, {"hanzi": "羊", "pinyin": "yáng", "fr": "mouton ; chèvre"}, {"hanzi": "鸟", "pinyin": "niǎo", "fr": "oiseau"}, {"hanzi": "日", "pinyin": "rì", "fr": "soleil ; jour"}, {"hanzi": "月", "pinyin": "yuè", "fr": "lune ; mois"}, {"hanzi": "火", "pinyin": "huǒ", "fr": "feu"}, {"hanzi": "木", "pinyin": "mù", "fr": "bois ; arbre"}, {"hanzi": "田", "pinyin": "tián", "fr": "champ"}, {"hanzi": "禾", "pinyin": "hé", "fr": "céréale sur pied"}, {"hanzi": "米", "pinyin": "mǐ", "fr": "riz"}, {"hanzi": "门", "pinyin": "mén", "fr": "porte"}, {"hanzi": "学", "pinyin": "xué", "fr": "étudier ; apprendre"}, {"hanzi": "号", "pinyin": "hào", "fr": "numéro ; date ; appellation"}, {"hanzi": "开", "pinyin": "kāi", "fr": "ouvrir ; commencer"}, {"hanzi": "天", "pinyin": "tiān", "fr": "ciel ; jour"}, {"hanzi": "年", "pinyin": "nián", "fr": "année"}, {"hanzi": "今", "pinyin": "jīn", "fr": "maintenant ; actuel"}, {"hanzi": "明", "pinyin": "míng", "fr": "clair ; demain (dans 明天)"}, {"hanzi": "几", "pinyin": "jǐ", "fr": "combien ; quelques"}, {"hanzi": "气", "pinyin": "qì", "fr": "air ; énergie ; humeur"}, {"hanzi": "雨", "pinyin": "yǔ", "fr": "pluie"}, {"hanzi": "下", "pinyin": "xià", "fr": "dessous ; descendre ; prochain"}, {"hanzi": "云", "pinyin": "yún", "fr": "nuage"}, {"hanzi": "水", "pinyin": "shuǐ", "fr": "eau"}, {"hanzi": "山", "pinyin": "shān", "fr": "montagne"}, {"hanzi": "石", "pinyin": "shí", "fr": "pierre"}, {"hanzi": "竹", "pinyin": "zhú", "fr": "bambou"}, {"hanzi": "土", "pinyin": "tǔ", "fr": "terre ; sol"}, {"hanzi": "王", "pinyin": "wáng", "fr": "roi ; nom de famille Wang"}, {"hanzi": "巾", "pinyin": "jīn", "fr": "tissu ; étoffe"}, {"hanzi": "衣", "pinyin": "yī", "fr": "vêtement"}, {"hanzi": "刀", "pinyin": "dāo", "fr": "couteau"}, {"hanzi": "勺", "pinyin": "sháo", "fr": "cuillère ; louche"}, {"hanzi": "工", "pinyin": "gōng", "fr": "travail ; ouvrier"}, {"hanzi": "力", "pinyin": "lì", "fr": "force"}, {"hanzi": "厂", "pinyin": "chǎng", "fr": "usine ; bâtiment"}, {"hanzi": "白", "pinyin": "bái", "fr": "blanc"}, {"hanzi": "小", "pinyin": "xiǎo", "fr": "petit"}, {"hanzi": "老", "pinyin": "lǎo", "fr": "vieux ; ancien"}, {"hanzi": "包", "pinyin": "bāo", "fr": "sac ; envelopper"}, {"hanzi": "肉", "pinyin": "ròu", "fr": "viande"}, {"hanzi": "鱼", "pinyin": "yú", "fr": "poisson"}, {"hanzi": "文", "pinyin": "wén", "fr": "écrit ; langue ; culture"}, {"hanzi": "也", "pinyin": "yě", "fr": "aussi"}, {"hanzi": "不", "pinyin": "bù", "fr": "ne… pas ; non"}, {"hanzi": "我", "pinyin": "wǒ", "fr": "je ; moi"}, {"hanzi": "很", "pinyin": "hěn", "fr": "très"}, {"hanzi": "用", "pinyin": "yòng", "fr": "utiliser"}, {"hanzi": "又", "pinyin": "yòu", "fr": "encore ; de nouveau"}, {"hanzi": "去", "pinyin": "qù", "fr": "aller"}, {"hanzi": "吃", "pinyin": "chī", "fr": "manger"}, {"hanzi": "买", "pinyin": "mǎi", "fr": "acheter"}];
+let stats = JSON.parse(localStorage.getItem('mandarinStats')||'{}');
+let current=null, currentDir='hanzi', revealed=false, session=0;
+function save(){localStorage.setItem('mandarinStats',JSON.stringify(stats));updateStats();}
+function state(w){return stats[w.hanzi]||{known:false,seen:0};}
+function updateStats(){let known=words.filter(w=>state(w).known).length;let done=words.reduce((a,w)=>a+state(w).seen,0);document.getElementById('known').textContent=known;document.getElementById('done').textContent=done;document.getElementById('progress').style.width=(known/words.length*100)+'%';document.getElementById('progressText').textContent=known+' caractère(s) maîtrisé(s) sur '+words.length+'.';}
+function show(id){document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.view===id));if(id==='dict')renderDictionary();if(id==='train'&&!current)newCard();window.scrollTo(0,0);}
+function speak(text){if(!('speechSynthesis'in window)){alert("La synthèse vocale n'est pas disponible sur ce navigateur.");return;}speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(text);u.lang='zh-CN';u.rate=.82;let voices=speechSynthesis.getVoices();let zh=voices.find(v=>v.lang.toLowerCase().startsWith('zh'));if(zh)u.voice=zh;speechSynthesis.speak(u);}
+function renderDictionary(){let q=document.getElementById('search').value.trim().toLowerCase(),f=document.getElementById('filter').value,s=document.getElementById('sort').value;let arr=words.filter(w=>(w.hanzi+w.pinyin+w.fr).toLowerCase().includes(q)).filter(w=>f==='all'||(f==='known'?state(w).known:!state(w).known));if(s==='hanzi')arr.sort((a,b)=>a.hanzi.localeCompare(b.hanzi));if(s==='pinyin')arr.sort((a,b)=>a.pinyin.localeCompare(b.pinyin));document.getElementById('wordList').innerHTML=arr.map(w=>`<button class="word" onclick="detail('${w.hanzi}')"><div class="hanzi">${w.hanzi}</div><div class="word-info"><b>${w.pinyin}</b><em>${w.fr}</em></div><span class="muted">${state(w).known?'✓':'›'}</span><span class="icon-btn" onclick="event.stopPropagation();speak('${w.hanzi}')">🔊</span></button>`).join('')||'<p class="muted">Aucun résultat.</p>';}
+function detail(h){let w=words.find(x=>x.hanzi===h);document.getElementById('search').value=h;renderDictionary();alert(w.hanzi+' · '+w.pinyin+'\\n'+w.fr+'\\n\\nPrononciation : bouton 🔊 dans la liste.');}
+function newCard(){let pool=words.filter(w=>document.getElementById('scope').value!=='review'||!state(w).known);if(!pool.length)pool=words;current=pool[Math.floor(Math.random()*pool.length)];let d=document.getElementById('direction').value;currentDir=d==='mixed'?(Math.random()<.5?'hanzi':'pinyin'):d;revealed=false;document.getElementById('prompt').textContent=currentDir==='hanzi'?'Retrouve le caractère chinois':'Retrouve le pinyin';document.getElementById('question').textContent=currentDir==='hanzi'?current.pinyin:current.hanzi;document.getElementById('solution').classList.add('hidden');document.getElementById('before').classList.remove('hidden');document.getElementById('after').classList.add('hidden');}
+function reveal(){if(!current)return;revealed=true;document.getElementById('answer').textContent=current.hanzi+' · '+current.pinyin;document.getElementById('meaning').textContent=current.fr;document.getElementById('solution').classList.remove('hidden');document.getElementById('before').classList.add('hidden');document.getElementById('after').classList.remove('hidden');}
+function rate(known){if(!revealed)return;let st=state(current);st.seen++;st.known=known;stats[current.hanzi]=st;save();session++;document.getElementById('sessionMsg').textContent='Réponses évaluées : '+session+'. Continue !';newCard();}
+function speakCurrent(){if(current)speak(current.hanzi);}
+updateStats();renderDictionary();newCard();
+if('serviceWorker'in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body></html>

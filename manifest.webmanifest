@@ -1,0 +1,9 @@
+{
+  "name": "Mes révisions de chinois",
+  "short_name": "Mandarin",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f5f1",
+  "theme_color": "#b83232",
+  "lang": "fr"
+}
