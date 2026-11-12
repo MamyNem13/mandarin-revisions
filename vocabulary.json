@@ -1,362 +1,74 @@
 [
-  {
-    "hanzi": "一",
-    "pinyin": "yī",
-    "fr": "un"
-  },
-  {
-    "hanzi": "二",
-    "pinyin": "èr",
-    "fr": "deux"
-  },
-  {
-    "hanzi": "三",
-    "pinyin": "sān",
-    "fr": "trois"
-  },
-  {
-    "hanzi": "四",
-    "pinyin": "sì",
-    "fr": "quatre"
-  },
-  {
-    "hanzi": "五",
-    "pinyin": "wǔ",
-    "fr": "cinq"
-  },
-  {
-    "hanzi": "六",
-    "pinyin": "liù",
-    "fr": "six"
-  },
-  {
-    "hanzi": "七",
-    "pinyin": "qī",
-    "fr": "sept"
-  },
-  {
-    "hanzi": "八",
-    "pinyin": "bā",
-    "fr": "huit"
-  },
-  {
-    "hanzi": "九",
-    "pinyin": "jiǔ",
-    "fr": "neuf"
-  },
-  {
-    "hanzi": "十",
-    "pinyin": "shí",
-    "fr": "dix"
-  },
-  {
-    "hanzi": "大",
-    "pinyin": "dà",
-    "fr": "grand"
-  },
-  {
-    "hanzi": "马",
-    "pinyin": "mǎ",
-    "fr": "cheval"
-  },
-  {
-    "hanzi": "口",
-    "pinyin": "kǒu",
-    "fr": "bouche ; ouverture"
-  },
-  {
-    "hanzi": "车",
-    "pinyin": "chē",
-    "fr": "voiture ; véhicule"
-  },
-  {
-    "hanzi": "书",
-    "pinyin": "shū",
-    "fr": "livre"
-  },
-  {
-    "hanzi": "人",
-    "pinyin": "rén",
-    "fr": "personne"
-  },
-  {
-    "hanzi": "头",
-    "pinyin": "tóu",
-    "fr": "tête"
-  },
-  {
-    "hanzi": "子",
-    "pinyin": "zi",
-    "fr": "enfant ; suffixe nominal"
-  },
-  {
-    "hanzi": "儿",
-    "pinyin": "ér",
-    "fr": "enfant ; suffixe -er"
-  },
-  {
-    "hanzi": "女",
-    "pinyin": "nǚ",
-    "fr": "femme ; féminin"
-  },
-  {
-    "hanzi": "中",
-    "pinyin": "zhōng",
-    "fr": "milieu ; centre ; Chine (dans 中国)"
-  },
-  {
-    "hanzi": "羊",
-    "pinyin": "yáng",
-    "fr": "mouton ; chèvre"
-  },
-  {
-    "hanzi": "鸟",
-    "pinyin": "niǎo",
-    "fr": "oiseau"
-  },
-  {
-    "hanzi": "日",
-    "pinyin": "rì",
-    "fr": "soleil ; jour"
-  },
-  {
-    "hanzi": "月",
-    "pinyin": "yuè",
-    "fr": "lune ; mois"
-  },
-  {
-    "hanzi": "火",
-    "pinyin": "huǒ",
-    "fr": "feu"
-  },
-  {
-    "hanzi": "木",
-    "pinyin": "mù",
-    "fr": "bois ; arbre"
-  },
-  {
-    "hanzi": "田",
-    "pinyin": "tián",
-    "fr": "champ"
-  },
-  {
-    "hanzi": "禾",
-    "pinyin": "hé",
-    "fr": "céréale sur pied"
-  },
-  {
-    "hanzi": "米",
-    "pinyin": "mǐ",
-    "fr": "riz"
-  },
-  {
-    "hanzi": "门",
-    "pinyin": "mén",
-    "fr": "porte"
-  },
-  {
-    "hanzi": "学",
-    "pinyin": "xué",
-    "fr": "étudier ; apprendre"
-  },
-  {
-    "hanzi": "号",
-    "pinyin": "hào",
-    "fr": "numéro ; date ; appellation"
-  },
-  {
-    "hanzi": "开",
-    "pinyin": "kāi",
-    "fr": "ouvrir ; commencer"
-  },
-  {
-    "hanzi": "天",
-    "pinyin": "tiān",
-    "fr": "ciel ; jour"
-  },
-  {
-    "hanzi": "年",
-    "pinyin": "nián",
-    "fr": "année"
-  },
-  {
-    "hanzi": "今",
-    "pinyin": "jīn",
-    "fr": "maintenant ; actuel"
-  },
-  {
-    "hanzi": "明",
-    "pinyin": "míng",
-    "fr": "clair ; demain (dans 明天)"
-  },
-  {
-    "hanzi": "几",
-    "pinyin": "jǐ",
-    "fr": "combien ; quelques"
-  },
-  {
-    "hanzi": "气",
-    "pinyin": "qì",
-    "fr": "air ; énergie ; humeur"
-  },
-  {
-    "hanzi": "雨",
-    "pinyin": "yǔ",
-    "fr": "pluie"
-  },
-  {
-    "hanzi": "下",
-    "pinyin": "xià",
-    "fr": "dessous ; descendre ; prochain"
-  },
-  {
-    "hanzi": "云",
-    "pinyin": "yún",
-    "fr": "nuage"
-  },
-  {
-    "hanzi": "水",
-    "pinyin": "shuǐ",
-    "fr": "eau"
-  },
-  {
-    "hanzi": "山",
-    "pinyin": "shān",
-    "fr": "montagne"
-  },
-  {
-    "hanzi": "石",
-    "pinyin": "shí",
-    "fr": "pierre"
-  },
-  {
-    "hanzi": "竹",
-    "pinyin": "zhú",
-    "fr": "bambou"
-  },
-  {
-    "hanzi": "土",
-    "pinyin": "tǔ",
-    "fr": "terre ; sol"
-  },
-  {
-    "hanzi": "王",
-    "pinyin": "wáng",
-    "fr": "roi ; nom de famille Wang"
-  },
-  {
-    "hanzi": "巾",
-    "pinyin": "jīn",
-    "fr": "tissu ; étoffe"
-  },
-  {
-    "hanzi": "衣",
-    "pinyin": "yī",
-    "fr": "vêtement"
-  },
-  {
-    "hanzi": "刀",
-    "pinyin": "dāo",
-    "fr": "couteau"
-  },
-  {
-    "hanzi": "勺",
-    "pinyin": "sháo",
-    "fr": "cuillère ; louche"
-  },
-  {
-    "hanzi": "工",
-    "pinyin": "gōng",
-    "fr": "travail ; ouvrier"
-  },
-  {
-    "hanzi": "力",
-    "pinyin": "lì",
-    "fr": "force"
-  },
-  {
-    "hanzi": "厂",
-    "pinyin": "chǎng",
-    "fr": "usine ; bâtiment"
-  },
-  {
-    "hanzi": "白",
-    "pinyin": "bái",
-    "fr": "blanc"
-  },
-  {
-    "hanzi": "小",
-    "pinyin": "xiǎo",
-    "fr": "petit"
-  },
-  {
-    "hanzi": "老",
-    "pinyin": "lǎo",
-    "fr": "vieux ; ancien"
-  },
-  {
-    "hanzi": "包",
-    "pinyin": "bāo",
-    "fr": "sac ; envelopper"
-  },
-  {
-    "hanzi": "肉",
-    "pinyin": "ròu",
-    "fr": "viande"
-  },
-  {
-    "hanzi": "鱼",
-    "pinyin": "yú",
-    "fr": "poisson"
-  },
-  {
-    "hanzi": "文",
-    "pinyin": "wén",
-    "fr": "écrit ; langue ; culture"
-  },
-  {
-    "hanzi": "也",
-    "pinyin": "yě",
-    "fr": "aussi"
-  },
-  {
-    "hanzi": "不",
-    "pinyin": "bù",
-    "fr": "ne… pas ; non"
-  },
-  {
-    "hanzi": "我",
-    "pinyin": "wǒ",
-    "fr": "je ; moi"
-  },
-  {
-    "hanzi": "很",
-    "pinyin": "hěn",
-    "fr": "très"
-  },
-  {
-    "hanzi": "用",
-    "pinyin": "yòng",
-    "fr": "utiliser"
-  },
-  {
-    "hanzi": "又",
-    "pinyin": "yòu",
-    "fr": "encore ; de nouveau"
-  },
-  {
-    "hanzi": "去",
-    "pinyin": "qù",
-    "fr": "aller"
-  },
-  {
-    "hanzi": "吃",
-    "pinyin": "chī",
-    "fr": "manger"
-  },
-  {
-    "hanzi": "买",
-    "pinyin": "mǎi",
-    "fr": "acheter"
-  }
+{"hanzi":"一","pinyin":"yī","fr":"un","tone":1,"components":"一","example":"一个人","examplePinyin":"yí ge rén","exampleFr":"une personne"},
+{"hanzi":"二","pinyin":"èr","fr":"deux","tone":4,"components":"二","example":"二月","examplePinyin":"èr yuè","exampleFr":"février"},
+{"hanzi":"三","pinyin":"sān","fr":"trois","tone":1,"components":"一 + 二","example":"三个","examplePinyin":"sān ge","exampleFr":"trois (objets/personnes)"},
+{"hanzi":"四","pinyin":"sì","fr":"quatre","tone":4,"components":"囗 + 八","example":"四个人","examplePinyin":"sì ge rén","exampleFr":"quatre personnes"},
+{"hanzi":"五","pinyin":"wǔ","fr":"cinq","tone":3,"components":"五","example":"五月","examplePinyin":"wǔ yuè","exampleFr":"mai"},
+{"hanzi":"六","pinyin":"liù","fr":"six","tone":4,"components":"亠 + 八","example":"六点","examplePinyin":"liù diǎn","exampleFr":"six heures"},
+{"hanzi":"七","pinyin":"qī","fr":"sept","tone":1,"components":"七","example":"七天","examplePinyin":"qī tiān","exampleFr":"sept jours"},
+{"hanzi":"八","pinyin":"bā","fr":"huit","tone":1,"components":"八","example":"八月","examplePinyin":"bā yuè","exampleFr":"août"},
+{"hanzi":"九","pinyin":"jiǔ","fr":"neuf","tone":3,"components":"九","example":"九点","examplePinyin":"jiǔ diǎn","exampleFr":"neuf heures"},
+{"hanzi":"十","pinyin":"shí","fr":"dix","tone":2,"components":"十","example":"十个人","examplePinyin":"shí ge rén","exampleFr":"dix personnes"},
+{"hanzi":"大","pinyin":"dà","fr":"grand","tone":4,"components":"大","example":"很大","examplePinyin":"hěn dà","exampleFr":"très grand"},
+{"hanzi":"马","pinyin":"mǎ","fr":"cheval","tone":3,"components":"马","example":"马车","examplePinyin":"mǎ chē","exampleFr":"calèche"},
+{"hanzi":"口","pinyin":"kǒu","fr":"bouche ; ouverture","tone":3,"components":"口","example":"人口","examplePinyin":"rén kǒu","exampleFr":"population"},
+{"hanzi":"车","pinyin":"chē","fr":"véhicule ; voiture","tone":1,"components":"车","example":"火车","examplePinyin":"huǒ chē","exampleFr":"train"},
+{"hanzi":"书","pinyin":"shū","fr":"livre","tone":1,"components":"⺮ (forme simplifiée historique) + 乛","example":"看书","examplePinyin":"kàn shū","exampleFr":"lire un livre"},
+{"hanzi":"人","pinyin":"rén","fr":"personne ; humain","tone":2,"components":"人","example":"中国人","examplePinyin":"Zhōngguó rén","exampleFr":"Chinois / Chinoise"},
+{"hanzi":"头","pinyin":"tóu","fr":"tête","tone":2,"components":"大 + 丶","example":"头发","examplePinyin":"tóu fa","exampleFr":"cheveux"},
+{"hanzi":"子","pinyin":"zǐ","fr":"enfant ; suffixe","tone":3,"components":"子","example":"儿子","examplePinyin":"ér zi","exampleFr":"fils"},
+{"hanzi":"儿","pinyin":"ér","fr":"enfant ; fils","tone":2,"components":"儿","example":"女儿","examplePinyin":"nǚ ér","exampleFr":"fille"},
+{"hanzi":"女","pinyin":"nǚ","fr":"femme ; féminin","tone":3,"components":"女","example":"女人","examplePinyin":"nǚ rén","exampleFr":"femme"},
+{"hanzi":"中","pinyin":"zhōng","fr":"milieu ; centre ; Chine (dans 中国)","tone":1,"components":"丨 + 口","example":"中国","examplePinyin":"Zhōngguó","exampleFr":"Chine"},
+{"hanzi":"羊","pinyin":"yáng","fr":"mouton ; chèvre","tone":2,"components":"羊","example":"山羊","examplePinyin":"shān yáng","exampleFr":"chèvre"},
+{"hanzi":"鸟","pinyin":"niǎo","fr":"oiseau","tone":3,"components":"鸟","example":"小鸟","examplePinyin":"xiǎo niǎo","exampleFr":"petit oiseau"},
+{"hanzi":"日","pinyin":"rì","fr":"soleil ; jour","tone":4,"components":"日","example":"日子","examplePinyin":"rì zi","exampleFr":"jours ; période"},
+{"hanzi":"月","pinyin":"yuè","fr":"lune ; mois","tone":4,"components":"月","example":"月亮","examplePinyin":"yuè liang","exampleFr":"lune"},
+{"hanzi":"火","pinyin":"huǒ","fr":"feu","tone":3,"components":"火","example":"火车","examplePinyin":"huǒ chē","exampleFr":"train"},
+{"hanzi":"木","pinyin":"mù","fr":"bois ; arbre","tone":4,"components":"木","example":"木头","examplePinyin":"mù tou","exampleFr":"bois"},
+{"hanzi":"田","pinyin":"tián","fr":"champ","tone":2,"components":"田","example":"田地","examplePinyin":"tián dì","exampleFr":"terre cultivée"},
+{"hanzi":"禾","pinyin":"hé","fr":"céréale sur pied","tone":2,"components":"禾","example":"禾苗","examplePinyin":"hé miáo","exampleFr":"jeunes pousses de céréales"},
+{"hanzi":"米","pinyin":"mǐ","fr":"riz ; grain","tone":3,"components":"米","example":"大米","examplePinyin":"dà mǐ","exampleFr":"riz (cru)"},
+{"hanzi":"门","pinyin":"mén","fr":"porte","tone":2,"components":"门","example":"开门","examplePinyin":"kāi mén","exampleFr":"ouvrir la porte"},
+{"hanzi":"学","pinyin":"xué","fr":"étudier ; apprendre","tone":2,"components":"⺍ + 冖 + 子 (analyse graphique simplifiée)","example":"学生","examplePinyin":"xué sheng","exampleFr":"élève ; étudiant"},
+{"hanzi":"号","pinyin":"hào","fr":"numéro ; date","tone":4,"components":"口 + 丂","example":"几号","examplePinyin":"jǐ hào","exampleFr":"quel jour du mois ?"},
+{"hanzi":"开","pinyin":"kāi","fr":"ouvrir ; commencer","tone":1,"components":"一 + 廾","example":"开门","examplePinyin":"kāi mén","exampleFr":"ouvrir la porte"},
+{"hanzi":"天","pinyin":"tiān","fr":"ciel ; jour","tone":1,"components":"一 + 大","example":"今天","examplePinyin":"jīn tiān","exampleFr":"aujourd'hui"},
+{"hanzi":"年","pinyin":"nián","fr":"année","tone":2,"components":"年","example":"今年","examplePinyin":"jīn nián","exampleFr":"cette année"},
+{"hanzi":"今","pinyin":"jīn","fr":"maintenant ; actuel","tone":1,"components":"今","example":"今天","examplePinyin":"jīn tiān","exampleFr":"aujourd'hui"},
+{"hanzi":"明","pinyin":"míng","fr":"clair ; prochain","tone":2,"components":"日 + 月","example":"明天","examplePinyin":"míng tiān","exampleFr":"demain"},
+{"hanzi":"几","pinyin":"jǐ","fr":"combien (petit nombre)","tone":3,"components":"几","example":"几岁","examplePinyin":"jǐ suì","exampleFr":"quel âge ?"},
+{"hanzi":"气","pinyin":"qì","fr":"air ; énergie","tone":4,"components":"气","example":"天气","examplePinyin":"tiān qì","exampleFr":"temps qu'il fait"},
+{"hanzi":"雨","pinyin":"yǔ","fr":"pluie","tone":3,"components":"雨","example":"下雨","examplePinyin":"xià yǔ","exampleFr":"pleuvoir"},
+{"hanzi":"下","pinyin":"xià","fr":"en bas ; descendre ; prochain","tone":4,"components":"一 + 卜","example":"下雨","examplePinyin":"xià yǔ","exampleFr":"pleuvoir"},
+{"hanzi":"云","pinyin":"yún","fr":"nuage","tone":2,"components":"二 + 厶","example":"白云","examplePinyin":"bái yún","exampleFr":"nuage blanc"},
+{"hanzi":"水","pinyin":"shuǐ","fr":"eau","tone":3,"components":"水","example":"水果","examplePinyin":"shuǐ guǒ","exampleFr":"fruit"},
+{"hanzi":"山","pinyin":"shān","fr":"montagne","tone":1,"components":"山","example":"高山","examplePinyin":"gāo shān","exampleFr":"haute montagne"},
+{"hanzi":"石","pinyin":"shí","fr":"pierre","tone":2,"components":"丆 + 口","example":"石头","examplePinyin":"shí tou","exampleFr":"pierre"},
+{"hanzi":"竹","pinyin":"zhú","fr":"bambou","tone":2,"components":"竹","example":"竹子","examplePinyin":"zhú zi","exampleFr":"bambou"},
+{"hanzi":"土","pinyin":"tǔ","fr":"terre ; sol","tone":3,"components":"土","example":"土地","examplePinyin":"tǔ dì","exampleFr":"terrain ; terre"},
+{"hanzi":"王","pinyin":"wáng","fr":"roi ; nom de famille Wang","tone":2,"components":"王","example":"王子","examplePinyin":"wáng zǐ","exampleFr":"prince"},
+{"hanzi":"巾","pinyin":"jīn","fr":"tissu ; serviette","tone":1,"components":"巾","example":"毛巾","examplePinyin":"máo jīn","exampleFr":"serviette"},
+{"hanzi":"衣","pinyin":"yī","fr":"vêtement","tone":1,"components":"衣","example":"衣服","examplePinyin":"yī fu","exampleFr":"vêtement(s)"},
+{"hanzi":"刀","pinyin":"dāo","fr":"couteau","tone":1,"components":"刀","example":"小刀","examplePinyin":"xiǎo dāo","exampleFr":"petit couteau"},
+{"hanzi":"勺","pinyin":"sháo","fr":"cuillère ; louche","tone":2,"components":"勹 + 丶","example":"勺子","examplePinyin":"sháo zi","exampleFr":"cuillère"},
+{"hanzi":"工","pinyin":"gōng","fr":"travail ; ouvrier","tone":1,"components":"工","example":"工人","examplePinyin":"gōng rén","exampleFr":"ouvrier"},
+{"hanzi":"力","pinyin":"lì","fr":"force","tone":4,"components":"力","example":"力气","examplePinyin":"lì qi","exampleFr":"force physique"},
+{"hanzi":"厂","pinyin":"chǎng","fr":"usine ; bâtiment en falaise (radical)","tone":3,"components":"厂","example":"工厂","examplePinyin":"gōng chǎng","exampleFr":"usine"},
+{"hanzi":"白","pinyin":"bái","fr":"blanc","tone":2,"components":"白","example":"白天","examplePinyin":"bái tiān","exampleFr":"journée ; plein jour"},
+{"hanzi":"小","pinyin":"xiǎo","fr":"petit","tone":3,"components":"小","example":"小鸟","examplePinyin":"xiǎo niǎo","exampleFr":"petit oiseau"},
+{"hanzi":"老","pinyin":"lǎo","fr":"vieux ; ancien","tone":3,"components":"老","example":"老师","examplePinyin":"lǎo shī","exampleFr":"professeur"},
+{"hanzi":"包","pinyin":"bāo","fr":"sac ; envelopper","tone":1,"components":"勹 + 巳","example":"书包","examplePinyin":"shū bāo","exampleFr":"cartable"},
+{"hanzi":"肉","pinyin":"ròu","fr":"viande","tone":4,"components":"肉","example":"牛肉","examplePinyin":"niú ròu","exampleFr":"bœuf (viande)"},
+{"hanzi":"鱼","pinyin":"yú","fr":"poisson","tone":2,"components":"鱼","example":"小鱼","examplePinyin":"xiǎo yú","exampleFr":"petit poisson"},
+{"hanzi":"文","pinyin":"wén","fr":"écriture ; culture ; langue","tone":2,"components":"文","example":"中文","examplePinyin":"Zhōng wén","exampleFr":"langue chinoise"},
+{"hanzi":"也","pinyin":"yě","fr":"aussi","tone":3,"components":"也","example":"我也去","examplePinyin":"wǒ yě qù","exampleFr":"Moi aussi, j'y vais"},
+{"hanzi":"不","pinyin":"bù","fr":"ne… pas","tone":4,"components":"不","example":"不是","examplePinyin":"bú shì","exampleFr":"ne pas être"},
+{"hanzi":"我","pinyin":"wǒ","fr":"je ; moi","tone":3,"components":"戈 + 手 (origine graphique)","example":"我们","examplePinyin":"wǒ men","exampleFr":"nous"},
+{"hanzi":"很","pinyin":"hěn","fr":"très","tone":3,"components":"彳 + 艮","example":"很好","examplePinyin":"hěn hǎo","exampleFr":"très bien"},
+{"hanzi":"用","pinyin":"yòng","fr":"utiliser","tone":4,"components":"用","example":"有用","examplePinyin":"yǒu yòng","exampleFr":"utile"},
+{"hanzi":"又","pinyin":"yòu","fr":"encore ; de nouveau ; aussi","tone":4,"components":"又","example":"又来","examplePinyin":"yòu lái","exampleFr":"revenir encore"},
+{"hanzi":"去","pinyin":"qù","fr":"aller ; partir","tone":4,"components":"土 + 厶 (analyse graphique usuelle)","example":"去学校","examplePinyin":"qù xué xiào","exampleFr":"aller à l'école"},
+{"hanzi":"吃","pinyin":"chī","fr":"manger","tone":1,"components":"口 + 乞","example":"吃饭","examplePinyin":"chī fàn","exampleFr":"prendre un repas"},
+{"hanzi":"买","pinyin":"mǎi","fr":"acheter","tone":3,"components":"乛 + 头 (forme simplifiée)","example":"买书","examplePinyin":"mǎi shū","exampleFr":"acheter un livre"}
 ]
